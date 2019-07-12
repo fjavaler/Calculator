@@ -15,6 +15,8 @@ namespace DesktopApp1
 {
     public partial class Calculator : Form
     {
+        private string operation = "";
+
         public Calculator()
         {
             InitializeComponent();
@@ -87,22 +89,22 @@ namespace DesktopApp1
 
         private void DivisionButton_Click(object sender, EventArgs e)
         {
-
+            operation = "/";
         }
 
         private void MultiplicationButton_Click(object sender, EventArgs e)
         {
-
+            operation = "*";
         }
 
         private void SubtractionButton_Click(object sender, EventArgs e)
         {
-
+            operation = "-";
         }
 
         private void AdditionButton_Click(object sender, EventArgs e)
         {
-
+            operation = "+";
         }
 
         private void EqualsButton_Click(object sender, EventArgs e)
